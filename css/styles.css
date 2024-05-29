@@ -268,6 +268,29 @@ color: #2e2f42;
     margin-top: 8px;
 }
 
+.main-team-icon {
+    fill: #4d5ae5;
+    
+}
+
+.main-team-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Розмір контейнера */
+    height: 40px; /* Розмір контейнера */
+    border-radius: 50%; /* Зробити круглим */
+    background-color: #4d5ae5; /* Фоновий колір */
+    color: #fff; /* Колір іконки */
+    text-decoration: none; /* Видалити підкреслення у посилань */
+}
+
+.main-team-social-link:hover {
+    background-color: #404bbf;
+}
+
+
+
 .main-portfolio {
     padding: 120px 0;
 }
