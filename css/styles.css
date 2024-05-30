@@ -43,6 +43,7 @@ gap: 0px;
 .header-nav {
     display: flex;
     align-items: center;
+    position: relative;
     
 }
 
@@ -68,10 +69,38 @@ color: #2e2f42;
     text-decoration: none;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    
  
 }
 
+.header-nav-link.current {
+    color: #404bbf;
+}
 
+
+
+
+
+.header-nav-link.active {
+    color: #404bbf;
+    
+}
+.header-nav-link.current::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Відстань від тексту до підкреслення */
+    left: 0;
+    width: 0;
+    height: 2px; /* Товщина підкреслення */
+    background-color: #404bbf; /* Колір підкреслення */
+    transition: width 0.3s ease; /* Анімація при наведенні */
+}
+
+.header-nav-link.current::after {
+    width: 100%;
+}
 
 
 
@@ -135,9 +164,23 @@ color: #2e2f42;
 }
 .main-hero {
     background: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office.jpg);
+background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 188px 0;
+    
+    
 }
+
+.container-hero {
+    max-width: 1200px; /* Максимальна ширина контенту */
+    margin: 0 auto; /* Центрувати контент */
+}
+
+
 
 .main-hero-title {
     font-family: "Roboto", sans-serif;
@@ -172,6 +215,8 @@ color: #2e2f42;
 .main-hero-btn:hover, .main-hero-btn:focus {
     background: #404bbf;
 }
+
+
 
 .main-feature {
     padding: 120px 0;
@@ -250,6 +295,7 @@ color: #2e2f42;
 
 .main-team-info {
     padding: 32px 0
+    
 }
 
 .main-team-subtitle {
@@ -285,11 +331,18 @@ color: #2e2f42;
     text-decoration: none; /* Видалити підкреслення у посилань */
 }
 
+
+
 .main-team-social-link:hover {
     background-color: #404bbf;
 }
 
-
+.main-team-social {
+    display: flex; /* Включаємо Flexbox для контейнера */
+    gap: 24px; /* Відстань між іконками */
+    justify-content: center;
+    margin-top: 8px;
+}
 
 .main-portfolio {
     padding: 120px 0;
@@ -315,6 +368,8 @@ color: #2e2f42;
     background-color: #fff;
     flex: 1 1 calc(33.333% - 24px);
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-portfolio-item--first {
@@ -368,6 +423,7 @@ color: #2e2f42;
 letter-spacing: 0.02em;
 color: #f4f4fd;
 max-width: 264px;
+
 }
 
 .footer .footer-link {
@@ -389,4 +445,58 @@ line-height: 1.17;
 }
 a {
     text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    max-width: 60%;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+
+}
+
+.footer-social-text {
+    margin-bottom: 10px; /* Відстань між текстом і іконками */
+    font-size: 16px;
+    font-weight: bold;
+    font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.02em;
+color: #fff;
+}
+.footer-social-icons {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 16px;
+   
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+}
+.footer-social-link:hover {
+    background-color: #31d0aa;
 }
