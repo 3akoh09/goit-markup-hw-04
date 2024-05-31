@@ -342,6 +342,7 @@ background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-team-subtitle {
@@ -367,7 +368,7 @@ background-repeat: no-repeat;
 }
 
 .main-team-icon {
-    fill: #4d5ae5;
+    fill: #f4f4fd;
     
 }
 
@@ -386,6 +387,10 @@ background-repeat: no-repeat;
 
 
 .main-team-social-link:hover {
+    background-color: #404bbf;
+}
+
+.main-team-social-link:focus {
     background-color: #404bbf;
 }
 
