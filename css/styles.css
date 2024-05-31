@@ -30,6 +30,7 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -90,12 +91,13 @@ color: #2e2f42;
 .header-nav-link.current::after {
     content: '';
     position: absolute;
-    bottom: -2px; /* Відстань від тексту до підкреслення */
+    bottom: -1px; /* Відстань від тексту до підкреслення */
     left: 0;
     width: 0;
-    height: 2px; /* Товщина підкреслення */
+    height: 4px; /* Товщина підкреслення */
     background-color: #404bbf; /* Колір підкреслення */
     transition: width 0.3s ease; /* Анімація при наведенні */
+    border-radius: 2px;
 }
 
 .header-nav-link.current::after {
