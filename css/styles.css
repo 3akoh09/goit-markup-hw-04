@@ -363,6 +363,12 @@ background-repeat: no-repeat;
     justify-content: center;
     margin-top: 8px;
 }
+.soc-list {
+    display: flex; /* Включаємо Flexbox для контейнера */
+    gap: 24px; /* Відстань між іконками */
+    justify-content: center;
+    margin-top: 8px;
+}
 
 .main-portfolio {
     padding: 120px 0;
