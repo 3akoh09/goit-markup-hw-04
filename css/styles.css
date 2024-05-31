@@ -593,10 +593,11 @@ color: #fff;
 }
 .footer-social-icons {
     display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: row;
-gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px; /* Відстань між елементами списку */
+    margin-bottom: 16px; /* Відступ між списками */
 
    
 }
