@@ -249,7 +249,7 @@ background-repeat: no-repeat;
     color: #434455;
 }
 
-.icon-container-inner {
+.icon-container{
     display: flex; 
     align-items: center; 
     justify-content: center; 
