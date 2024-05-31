@@ -165,6 +165,7 @@ color: #2e2f42;
     font-style: normal;
 }
 .main-hero {
+    max-width: 1440px;
     background: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/people-office.jpg);
@@ -212,6 +213,8 @@ background-repeat: no-repeat;
     border-radius: 4px; /* Заокруглення кнопки */
     display: block; /* Робимо кнопку блочним елементом */
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .main-hero-btn:hover, .main-hero-btn:focus {
