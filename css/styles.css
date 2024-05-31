@@ -249,6 +249,17 @@ background-repeat: no-repeat;
     color: #434455;
 }
 
+.icon-container-inner {
+    display: flex; /* Для можливості зміни розташування елемента */
+    align-items: center; /* Вирівнювання іконки по вертикалі */
+    justify-content: center; /* Вирівнювання іконки по горизонталі */
+        background-color: #f4f4fd; /* Колір фону блока */
+        border-radius: 4px; /* Радіус закруглення кутів блока */
+        border: 1px solid #8e8f99; /* Стиль обводки по периметру контейнера */
+        
+    }
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
