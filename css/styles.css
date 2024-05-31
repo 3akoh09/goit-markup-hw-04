@@ -593,6 +593,7 @@ a {
     font: 500 16px / 1.5 "Roboto", sans-serif;
 letter-spacing: 0.02em;
 color: #fff;
+margin-bottom: 16px;
 }
 .footer-social-icons {
     display: flex;
